@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Lexend", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1395px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+li .sub-menu {
+  transform: rotateX(-90deg);
+}
+
+li:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.st-contact-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #054c60;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+
+  animation: pulse2 linear 1000ms infinite;
+}
+@keyframes pulse2 {
+  0% {
+    box-shadow: 0 0 0 0 #054c60;
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(94, 223, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(94, 223, 255, 0);
+  }
+}
+
+.circle::before {
+  animation: st_rotate 5s infinite linear;
+}
+.circle::after {
+  animation: st_rotate 5s infinite linear;
+}
+
+@keyframes st_rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.slider_subTitle {
+  animation: 0.5s ease-in-out 0.5s normal none 1 running fadeInDown;
+  animation-fill-mode: both;
+}
+.slider_title {
+  animation: 0.6s ease-in-out 0.6s normal none 1 running fadeInDown;
+  animation-fill-mode: both;
+}
+
+.slider_desc {
+  animation: 0.7s ease-in-out 0.7s normal none 1 running fadeInDown;
+  animation-fill-mode: both;
+}
+.slider_button {
+  animation: 0.8s ease-in-out 1s normal none 1 running fadeInUp;
+  animation-fill-mode: both;
+}
+.more_btn:hover .icon {
+  color: #054c60;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.line::after {
+  animation: st__line 3s ease infinite alternate;
+}
+
+@keyframes st__line {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(74px);
+  }
+}
