@@ -6,7 +6,7 @@ export default {
       colors: {
         primary: "#f68b21",
         secondary: "#003d4d",
-        accent: "#f68b21",
+        accent: "#f5f4f9",
       },
       screens: {
         sm: "640px",

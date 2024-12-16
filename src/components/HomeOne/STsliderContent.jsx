@@ -9,10 +9,8 @@ const STsliderContent = ({ icon, title }) => {
           <div className="relative before:absolute before:-top-12 before:left-8 before:bg-[#f1f1f1] before:w-[50px] before:h-[50px] before:rotate-[45deg] before:z-[1] circle"></div>
         </div>
         <div>
-          <h3 className="text-[26px]  font-medium text-secondary mt-[25px] mb-[18px]">
-            {title}
-          </h3>
-          <p className="pb-4 text-secondary">
+          <h3 className=" mt-[25px] mb-[18px]">{title}</h3>
+          <p className="pb-4 text-[#525459]">
             Appropriately enhance principle-cent standards in platforms.
             Credibly orch popular services.
           </p>
