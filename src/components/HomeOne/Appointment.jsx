@@ -76,7 +76,6 @@ const Appointment = () => {
                   type="submit"
                   className={`group mt-10 relative inline-block bg-primary text-lg capitalize text-white py-[18px] px-[27px] overflow-hidden transition-all duration-500 z-[1] hover:text-secondary before:absolute before:content-[''] before:top-0 before:-left-3 before:w-[30px] before:h-full before:bg-white before:skew-x-[22deg] before:transition-all before:duration-500 before:-z-[1] before:hover:w-[95%] `}
                 >
-                  {" "}
                   request quote
                   <FontAwesomeIcon
                     className="icon ml-4 -rotate-[49deg]  text-[22px] text-white group-hover:text-secondary"
