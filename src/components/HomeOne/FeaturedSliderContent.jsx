@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleLeft,
+  faAngleRight,
+  faArrowRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
@@ -67,19 +71,19 @@ const FeaturedSliderContent = ({
               </Link>
             </div>
           </div>
-          <div className="">
+          <div className=" absolute top-[43%] sm:right-[70px] right-[55px]">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
-              className="slider-button absolute   sm:top-[65%] xs:top-[43%] top-[42%]   transform -translate-y-1/2 p-4 bg-primary text-white rounded-full cursor-pointer  transition-all ease-out duration-300     xs:right-5 right-3 group-hover:transition-all group-hover:ease-out group-hover:duration-300 z-10  after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:m-auto after:content-[''] after:rounded-[50%] after:text-center after:w-0 after:h-0 after:-z-[1] after:transition-all after:ease-out-out after:duration-300 after:bg-[#081845]"
+              className=" cursor-pointer  text-white text-lg bg-primary w-[45px] h-[45px] leading-[45px] block text-center my-[10px] duration-500 hover:bg-secondary"
             >
-              {/* <FaAngleLeft size={22} />j */}
+              <FontAwesomeIcon icon={faAngleLeft} />
             </button>
 
             <button
               onClick={() => swiperRef.current?.slideNext()}
-              className="slider-button absolute    sm:top-[92%] xs:top-[85%] top-[83%] transform -translate-y-1/2  p-4 bg-primary text-white rounded-full cursor-pointer  transition-all ease-out duration-300 z-10 hover:bg-primary   xs:right-5 right-3 group-hover:transition-all group-hover:ease-out group-hover:duration-300 after:absolute after:left-0 after:right-0 after:top-0 after:bottom-0 after:m-auto after:content-[''] after:rounded-[50%] after:text-center after:w-0 after:h-0 after:-z-[1] after:transition-all after:ease-out-out after:duration-300 after:bg-[#081845]"
+              className=" cursor-pointer  text-white text-lg bg-primary w-[45px] h-[45px] leading-[45px] block mt-5 text-center my-[10px] duration-500 hover:bg-secondary"
             >
-              {/* <FaAngleRight size={22} /> */}
+              <FontAwesomeIcon icon={faAngleRight} />
             </button>
           </div>
         </div>

@@ -9,6 +9,7 @@ import { createBrowserRouter } from "react-router-dom";
 // import ProductDetails from "@/pages/ProductDetails";
 import App from "../App";
 import HomeOne from "../pages/HomeOne";
+import HomeTwo from "../pages/HomeTwo";
 
 const routes = createBrowserRouter([
   {
@@ -19,10 +20,10 @@ const routes = createBrowserRouter([
         index: true,
         element: <HomeOne />,
       },
-      // {
-      //   path: "/products",
-      //   element: <Products />,
-      // },
+      {
+        path: "/homeTwo",
+        element: <HomeTwo />,
+      },
       // {
       //   path: "/product-details/:id",
       //   element: <ProductDetails />,

@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   font-family: "Lexend", sans-serif;
   box-sizing: border-box;
@@ -36,6 +37,10 @@ li:hover .sub-menu {
   transform: rotateX(0deg);
 }
 
+.is-sticky {
+  animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 .st-contact-icon {
   display: inline-block;
   width: 50px;
@@ -168,3 +173,4 @@ li:hover .sub-menu {
   background-color: transparent !important;
   color: #f68b21 !important;
 }
+/* animations.css */
