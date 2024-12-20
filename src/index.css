@@ -150,7 +150,7 @@ li:hover .sub-menu {
 }
 /* nice select custom style */
 .nice-select {
-  background-color: white !important;
+  background-color: none;
   width: 100% !important ;
   height: 60px !important;
   padding-top: 11px !important;
@@ -173,4 +173,63 @@ li:hover .sub-menu {
   background-color: transparent !important;
   color: #f68b21 !important;
 }
+
+.nice-select:focus {
+  border: none;
+}
+.nice-select:after {
+  font-size: 30px;
+}
 /* animations.css */
+
+.about_video {
+  animation: pulse linear 1000ms infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #f4f4f4;
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px #f4f4f4;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #f4f4f4;
+  }
+}
+
+.ap_video::before {
+  border: 1px solid white;
+  transform: translateX(-50%) translateY(-50%);
+  animation: st_vidoe 1500ms ease-out infinite;
+}
+
+@keyframes st_vidoe {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.8);
+    opacity: 0;
+  }
+}
+
+.shape {
+  animation: moveUpDown 10s infinite linear;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
