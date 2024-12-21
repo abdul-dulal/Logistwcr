@@ -233,3 +233,19 @@ li:hover .sub-menu {
     transform: translateY(0);
   }
 }
+
+.book_info::before {
+  animation: upDown 10s infinite linear;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

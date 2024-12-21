@@ -34,7 +34,7 @@ const AppionmentTwo = () => {
   return (
     <div>
       <form>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-6">
           <div className="wow animate__fadeInUp" data-wow-duration=".6s">
             <InputField icon={faUser} plc="full name *" type="text" />
           </div>

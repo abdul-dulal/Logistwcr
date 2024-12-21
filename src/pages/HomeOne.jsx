@@ -39,12 +39,8 @@ import blog2 from "/src/assets/HomeOne/b2.jpg";
 import blog3 from "/src/assets/HomeOne/b3.jpg";
 import meta from "/src/assets/HomeOne/meta.png";
 import Brand from "../components/HomeOne/Brand";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+
+import FooterSocial from "../components/Footer/FooterSocial";
 const HomeOne = () => {
   useEffect(() => {
     const wow = new WOW({
@@ -534,31 +530,7 @@ const HomeOne = () => {
                   Feugiat a ligula rutrum luctus primis ultrice nteger congue
                   magna at pretium purus a pretium ligula rutrum and luctus
                 </p>
-                <div>
-                  <h3 className="relative text-[22px] text-white font-medium opacity-[.8] mt-[25px] mb-[18px] ml-[18px]  before:absolute before:content-[''] before:-top-0 before:-left-4 before:w-[3px] before:h-[30px] before:bg-primary">
-                    Social Info
-                  </h3>
-                  <div className="inline-block text-white w-[38px] h-[38px] leading-[38px] border border-dashed border-[rgba(255,255,255,0.2)] text-center mp-[22px] mr-[10px] duration-500 hover:bg-primary hover:border hover:border-dashed hover:border-bg-primary">
-                    <Link to="/">
-                      <FontAwesomeIcon icon={faFacebook} />
-                    </Link>
-                  </div>
-                  <div className="inline-block text-white w-[38px] h-[38px] leading-[38px] border border-dashed border-[rgba(255,255,255,0.2)] text-center mp-[22px] mr-[10px] duration-500 hover:bg-primary hover:border hover:border-dashed hover:border-bg-primary">
-                    <Link to="/">
-                      <FontAwesomeIcon icon={faInstagram} />
-                    </Link>
-                  </div>
-                  <div className="inline-block text-white w-[38px] h-[38px] leading-[38px] border border-dashed border-[rgba(255,255,255,0.2)] text-center mp-[22px] mr-[10px] duration-500 hover:bg-primary hover:border hover:border-dashed hover:border-bg-primary">
-                    <Link to="/">
-                      <FontAwesomeIcon icon={faLinkedin} />
-                    </Link>
-                  </div>
-                  <div className="inline-block text-white w-[38px] h-[38px] leading-[38px] border border-dashed border-[rgba(255,255,255,0.2)] text-center mp-[22px] mr-[10px] duration-500 hover:bg-primary hover:border hover:border-dashed hover:border-bg-primary">
-                    <Link to="/">
-                      <FontAwesomeIcon icon={faXTwitter} />
-                    </Link>
-                  </div>
-                </div>
+                <FooterSocial />
               </div>
               <div>
                 <h5 className="relative text-white mb-[43px] lg:mt-0 mt-6 before:absolute before:content-[''] before:-bottom-[17px] before:left-0 before:bg-primary before:w-[100px] before:h-[1px]">
