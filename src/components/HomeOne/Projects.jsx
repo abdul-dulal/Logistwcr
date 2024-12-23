@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Projects = ({ img }) => {
+const Projects = ({ img, title }) => {
   return (
     <div className="group relative overflow-hidden">
       <img
@@ -16,7 +16,7 @@ const Projects = ({ img }) => {
           to="/"
           className="text-[21px] transition-all duration-300 capitalize text-secondary font-medium  hover:text-primary hover:transition-all hover:duration-500"
         >
-          Experts in technology fields
+          {title}
         </Link>
         <span className="text-secondary text-lg block mt-2">
           Transportation 2024

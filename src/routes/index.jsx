@@ -11,6 +11,7 @@ import App from "../App";
 import HomeOne from "../pages/HomeOne";
 import HomeTwo from "../pages/HomeTwo";
 import HomeThree from "../pages/HomeThree";
+import HomeFour from "../pages/HomeFour";
 
 const routes = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const routes = createBrowserRouter([
       {
         path: "/homeThree",
         element: <HomeThree />,
+      },
+      {
+        path: "/HomeFour",
+        element: <HomeFour />,
       },
       // {
       //   path: "/product-details/:id",

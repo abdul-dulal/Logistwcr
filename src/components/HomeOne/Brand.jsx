@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import brand from "/src/assets/HomeOne/b.png";
-const STslider = () => {
+const Brand = () => {
   return (
     <div className="relative ">
       <div className="wow animate__fadeInUp" data-wow-duration=".6s">
@@ -73,4 +73,4 @@ const STslider = () => {
   );
 };
 
-export default STslider;
+export default Brand;

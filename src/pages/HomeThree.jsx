@@ -48,6 +48,7 @@ import blog2 from "/src/assets/HomeTwo/b2.jpg";
 import blog3 from "/src/assets/HomeTwo/b3.jpg";
 import BlogContent from "../components/HomeTwo/BlogContent";
 import Subscribe from "../components/HomeThree/Subscribe";
+import About from "../components/HomeThree/About";
 const HomeThree = () => {
   const selectRef = useRef(null);
 
@@ -139,54 +140,7 @@ const HomeThree = () => {
                 text <br />
                 piece of classical Latin literature from 45 BC
               </p>
-              <div className="flex flex-wrap sm:gap-8 gap-2">
-                <ul>
-                  <li className="flex items-center text-base font-bold mt-[14px]">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="w-6 h-6 leading-6  text-primary  rounded-[50px] text-center mr-[17px]"
-                    />
-                    Freight Forwarding
-                  </li>
-                  <li className="flex items-center text-base font-bold mt-[14px]">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="w-6 h-6 leading-6  text-primary  rounded-[50px] text-center mr-[17px]"
-                    />
-                    Warehousing & Delivery
-                  </li>
-                  <li className="flex items-center text-base font-bold mt-[14px]">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="w-6 h-6 leading-6  text-primary  rounded-[50px] text-center mr-[17px]"
-                    />
-                    Costoms Clearance
-                  </li>
-                </ul>
-                <ul>
-                  <li className="flex items-center text-base font-bold mt-[14px]">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="w-6 h-6 leading-6  text-primary  rounded-[50px] text-center mr-[17px]"
-                    />
-                    Freight Forwarding
-                  </li>
-                  <li className="flex items-center text-base font-bold mt-[14px]">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="w-6 h-6 leading-6  text-primary  rounded-[50px] text-center mr-[17px]"
-                    />
-                    Warehousing & Delivery
-                  </li>
-                  <li className="flex items-center text-base font-bold mt-[14px]">
-                    <FontAwesomeIcon
-                      icon={faCircleCheck}
-                      className="w-6 h-6 leading-6  text-primary  rounded-[50px] text-center mr-[17px]"
-                    />
-                    Costoms Clearance
-                  </li>
-                </ul>
-              </div>
+              <About />
               <Link
                 to="/"
                 className="pt-4 pr-10 pb-[18px] pl-[39px] capitalize text-white bg-secondary inline-block duration-500 rounded-[5px] mt-11 hover:bg-primary"
