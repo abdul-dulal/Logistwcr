@@ -13,9 +13,9 @@ const Team = ({ img, name }) => {
     <div className="relative bg-secondary pb-[37px] rounded-tl-[280px] rounded-tr-[280px] overflow-hidden  z-[1] before:absolute before:content-[''] before:left-0 before:bottom-0 before:w-full before:h-[0] before:bg-primary before:duration-500 before:-z-[1] before:hover:h-full before:hover:duration-500">
       <img src={img} className="w-full" alt="Team Member" />
       <div className="mt-8 text-center">
-        <h3 className="sm:text-[26px] text-[22px]  font-medium text-white mb-[5px]">
+        <h4 className="sm:text-[26px] text-[22px]  font-medium text-white mb-[5px]">
           {name}
-        </h3>
+        </h4>
         <span className="capitalize text-base  text-white">Chief Engineer</span>
         <div className="mt-4">
           <Link

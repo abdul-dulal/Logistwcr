@@ -64,7 +64,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/homeThree"
                               >
                                 home three
                               </Link>

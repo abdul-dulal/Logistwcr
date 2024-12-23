@@ -13,10 +13,16 @@ body {
     @apply lg:text-5xl lg:leading-[60px] sm:text-[32px] text-[22px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary font-semibold;
   }
   h3 {
+    @apply md:text-[42px] sm:text-[36px] text-[28px]   md:leading-[53px] sm:leading-10 leading-[43px] font-bold text-secondary;
+  }
+  h4 {
     @apply text-[26px]  font-medium text-secondary;
   }
   h5 {
     @apply sm:text-2xl text-[17px] font-medium inline-block text-primary;
+  }
+  h6 {
+    @apply sm:text-xl text-[17px] capitalize font-bold text-primary relative inline-block ml-[120px] before:absolute before:content-[''] before:top-[11px] before:-left-[119px] before:bg-primary before:w-[105px]  before:h-1;
   }
 }
 
@@ -235,6 +241,9 @@ li:hover .sub-menu {
 }
 
 .book_info::before {
+  animation: upDown 10s infinite linear;
+}
+.shape {
   animation: upDown 10s infinite linear;
 }
 

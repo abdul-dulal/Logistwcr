@@ -94,7 +94,7 @@ const HomeOne = () => {
                 />
               </div>
               <div>
-                <h3 className="mb-2 text-secondary">Real-Time Tracking</h3>
+                <h4 className="mb-2 text-secondary">Real-Time Tracking</h4>
                 <p>
                   There are many variations of passages of lorem suffered
                   alteration in some form, by injected
@@ -209,7 +209,8 @@ const HomeOne = () => {
             <span className="relative inline-block after:absolute after:left-5 after:-top-5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:left-5 before:-top-4 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle"></span>
             <h2 className="mb-11">Proud to Deliver Excellence</h2>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 ">
+
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 items-center gap-8 ">
             <div className="wow animate__fadeInUp" data-wow-duration=".6s">
               <Projects img={project1} />
             </div>
@@ -307,9 +308,9 @@ const HomeOne = () => {
             <div className="lg:col-span-8 col-span-12 lg:pt-0 pt-10">
               <div className="md:px-[70px] px-8 ">
                 <div className="wow animate__fadeInUp" data-wow-duration=".6s">
-                  <h3 className="lg:text-[32px] text-[25px] mb-1 font-semibold">
+                  <h4 className="lg:text-[32px] text-[25px] mb-1 font-semibold">
                     Coverage That Protect Your World!
-                  </h3>
+                  </h4>
                   <span className="text-lg text-secondary">
                     Not sure which policy suits you the best?
                   </span>
@@ -506,9 +507,9 @@ const HomeOne = () => {
             className=" text-center wow animate__fadeInUp"
             data-wow-duration=".6s"
           >
-            <h3 className="text-2xl text-secondary font-medium py-[13px] sm:px-[50px] px-[13px] inline-block relative -top-7 m-auto bg-white">
+            <h4 className="text-2xl text-secondary font-medium py-[13px] sm:px-[50px] px-[13px] inline-block relative -top-7 m-auto bg-white">
               Our Partners & Suppoters
-            </h3>
+            </h4>
           </div>
           <Brand />
         </div>

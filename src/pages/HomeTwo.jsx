@@ -35,6 +35,7 @@ import blog3 from "/src/assets/HomeTwo/b3.jpg";
 import BlogContent from "../components/HomeTwo/BlogContent";
 
 import FooterTwo from "../components/Footer/FooterTwo";
+import Subscribe from "../components/HomeThree/Subscribe";
 
 const HomeTwo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -120,7 +121,7 @@ const HomeTwo = () => {
                       >
                         <iframe
                           className="w-full h-full"
-                          src="https://www.youtube.com/embed/SZEflIVnhH8?si=BH39mJbQuwQ-VpmA"
+                          src="https://www.youtube.com/embed/SZEflIVnhH8?si=Bh49mJbQuwQ-VpmA"
                           title="YouTube video player"
                           frameBorder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -394,42 +395,7 @@ const HomeTwo = () => {
 
       {/* ST__Subscribe__Area */}
 
-      <section className="relative">
-        <div className="bg-[#f3f3f9]">
-          <div className="container">
-            <div className="grid lg:grid-cols-2 lg:gap-0 gap-10 items-center">
-              <div className="lg:px-[75px] sm:px-4 lg:pt-0 pt-8">
-                <h2>Join Our Mailing List</h2>
-                <span className="text-secondary text-xl font-normal">
-                  Ut enim ad minim veniam, quis nostruyd
-                </span>
-                <form>
-                  <div className="relative mt-8">
-                    <input
-                      type="email"
-                      placeholder="type your email"
-                      className=" w-full h-[62px] border border-solid bg-secondary border-[#ebebeb] pl-8 outline-none focus:outline-none placeholder:capitalize placeholder:text-white"
-                    />
-                    <button
-                      type="submit"
-                      className="bg-primary  text-white py-[17px] px-[38px] sm:absolute lg:-right-[53px] right-2 sm:top-[7px] sm:mt-0 mt-5 text-[22px] font-semibold leading-[0.6]"
-                    >
-                      Subscribe
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div>
-                <img
-                  src="/src/assets/HomeTwo/call.png"
-                  className="relative w-full ml-[15px]"
-                  alt="Call To Action"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Subscribe />
 
       {/* ST__Footer__Area */}
       <FooterTwo />
