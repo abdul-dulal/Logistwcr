@@ -1,17 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
 
-// import Login from "@/pages/Login";
-// import NotFound from "@/pages/NotFound";
-
-// import Products from "@/pages/Products";
-// import Checkout from "@/pages/Checkout";
-// import Signup from "@/pages/Signup";
-// import ProductDetails from "@/pages/ProductDetails";
 import App from "../App";
 import HomeOne from "../pages/HomeOne";
 import HomeTwo from "../pages/HomeTwo";
 import HomeThree from "../pages/HomeThree";
 import HomeFour from "../pages/HomeFour";
+import About from "../pages/About";
+import Service from "../pages/Service";
+import ServiceDetails from "../pages/ServiceDetails";
+
+import TeamDetails from "../pages/TeamDetails";
+import TeamMember from "../pages/TeamMember";
+import Project from "../pages/Project";
+import ProjectDetails from "../pages/ProjectDetails";
+import Faq from "../pages/Faq";
+import NotFound from "../pages/NotFound";
 
 const routes = createBrowserRouter([
   {
@@ -34,28 +37,44 @@ const routes = createBrowserRouter([
         path: "/HomeFour",
         element: <HomeFour />,
       },
-      // {
-      //   path: "/product-details/:id",
-      //   element: <ProductDetails />,
-      // },
-      // {
-      //   path: "/checkout",
-      //   element: <Checkout />,
-      // },
+      {
+        path: "/About",
+        element: <About />,
+      },
+      {
+        path: "/Service",
+        element: <Service />,
+      },
+      {
+        path: "/service-details",
+        element: <ServiceDetails />,
+      },
+      {
+        path: "/Team",
+        element: <TeamMember />,
+      },
+      {
+        path: "/team-details",
+        element: <TeamDetails />,
+      },
+      {
+        path: "/Project",
+        element: <Project />,
+      },
+      {
+        path: "/project-details",
+        element: <ProjectDetails />,
+      },
+      {
+        path: "/Faq",
+        element: <Faq />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
   },
-  // {
-  //   path: "/login",
-  //   element: <Login />,
-  // },
-  // {
-  //   path: "/signup",
-  //   element: <Signup />,
-  // },
-  // {
-  //   path: "*",
-  //   element: <NotFound />,
-  // },
 ]);
 
 export default routes;

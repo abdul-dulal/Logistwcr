@@ -168,8 +168,8 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
-      {/* ST__Client__Area */}
 
+      {/* ST__Client__Area */}
       <section className="pt-[100px] pb-20">
         <div className="container">
           <div

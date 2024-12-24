@@ -5,7 +5,6 @@ import NiceSelect from "nice-select2";
 import {
   faArrowRight,
   faBagShopping,
-  faCircleCheck,
   faEnvelopeOpen,
   faLocationDot,
   faPhone,
