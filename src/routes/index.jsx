@@ -15,6 +15,8 @@ import Project from "../pages/Project";
 import ProjectDetails from "../pages/ProjectDetails";
 import Faq from "../pages/Faq";
 import NotFound from "../pages/NotFound";
+import Contact from "../pages/Contact";
+import BlogStandarad from "../pages/BlogStandarad";
 
 const routes = createBrowserRouter([
   {
@@ -68,6 +70,14 @@ const routes = createBrowserRouter([
       {
         path: "/Faq",
         element: <Faq />,
+      },
+      {
+        path: "/BlogStandard",
+        element: <BlogStandarad />,
+      },
+      {
+        path: "/Contact",
+        element: <Contact />,
       },
       {
         path: "*",

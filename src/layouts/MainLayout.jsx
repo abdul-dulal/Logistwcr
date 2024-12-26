@@ -11,8 +11,8 @@ const MainLayout = () => {
   return (
     <div>
       <div>
-        {/* <div>{location.pathname == "/" ? <TopHeader /> : <TopHeaderTwo />}</div> */}
-        {/* <div>{location.pathname == "/" ? <Navbar /> : <HeaderTwo />}</div> */}
+        <div>{location.pathname == "/" ? <TopHeader /> : <TopHeaderTwo />}</div>
+        <div>{location.pathname == "/" ? <Navbar /> : <HeaderTwo />}</div>
         <div className="">
           <Outlet />
         </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 /* eslint-disable react/prop-types */
 const BreadCumb = ({ title, currentPage }) => {
   return (
-    <div className="bg-[url('/src/assets/About/breadcumb-bg.jpg')] pt-[155px]">
+    <div className="bg-[url('/src/assets/About/breadcumb-bg.jpg')] pt-[155px] pb-6">
       <div className="container">
         <div>
           <span className="lg:text-[28px] text-lg text-white text-center block">
@@ -13,7 +13,7 @@ const BreadCumb = ({ title, currentPage }) => {
             {title}
           </h2>
         </div>
-        <ul className="bg-primary inline-block py-5 px-10 rounded-md">
+        <ul className="bg-primary inline-block py-5 px-10 rounded-md relative top-6">
           <li className="inline">
             <Link
               to="/"
