@@ -9,6 +9,8 @@ import "swiper/css/autoplay";
 import { useRef } from "react";
 import FeaturedSliderContent from "./FeaturedSliderContent";
 
+import slider1 from "/src/assets/slider/slider-1.jpg";
+import slider2 from "/src/assets/slider/slider-2.jpg";
 const FeaturedSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
@@ -33,7 +35,7 @@ const FeaturedSlider = () => {
             titleTwo=" Logistic & Transport"
             subTitle="We Specialise in the transportation"
             index={0}
-            bgImg="/src/assets/slider/slider-1.jpg"
+            bgImg={slider1}
             swiperRef={swiperRef}
           />
         </SwiperSlide>
@@ -45,7 +47,7 @@ const FeaturedSlider = () => {
             titleTwo=" Logistic & Transport"
             subTitle="We Specialise in the transportation"
             index={1}
-            bgImg="/src/assets/slider/slider-2.jpg"
+            bgImg={slider2}
             swiperRef={swiperRef}
           />
         </SwiperSlide>
@@ -57,7 +59,7 @@ const FeaturedSlider = () => {
             titleTwo=" Logistic & Transport"
             subTitle="We Specialise in the transportation"
             index={2}
-            bgImg="/src/assets/slider/slider-1.jpg"
+            bgImg={slider1}
             swiperRef={swiperRef}
           />
         </SwiperSlide>
@@ -69,7 +71,7 @@ const FeaturedSlider = () => {
             titleTwo=" Logistic & Transport"
             subTitle="We Specialise in the transportation"
             index={3}
-            bgImg="/src/assets/slider/slider-2.jpg"
+            bgImg={slider2}
             swiperRef={swiperRef}
           />
         </SwiperSlide>
