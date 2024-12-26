@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import FooterSocial from "./FooterSocial";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
-
+import footer1 from "/src/assets/footer/p1.png";
+import footer2 from "/src/assets/footer/p2.png";
+import footer3 from "/src/assets/footer/p3.png";
+import footer4 from "/src/assets/footer/p4.png";
+import footer5 from "/src/assets/footer/p5.png";
+import footer6 from "/src/assets/footer/p6.png";
 const FooterTwo = () => {
   return (
     <div>
@@ -100,46 +105,22 @@ const FooterTwo = () => {
               <div className="md:ml-[41px] md:mr-24">
                 <div className="">
                   <Link to="/" className="inline-block m-[5px]">
-                    <img
-                      src="/src/assets/HomeTwo/p1.png"
-                      className="w-full"
-                      alt="Footer"
-                    />
+                    <img src={footer1} className="w-full" alt="Footer" />
                   </Link>
                   <Link to="/" className="inline-block m-[5px]">
-                    <img
-                      src="/src/assets/HomeTwo/p2.png"
-                      className="w-full"
-                      alt="Footer"
-                    />
+                    <img src={footer2} className="w-full" alt="Footer" />
                   </Link>
                   <Link to="/" className="inline-block m-[5px]">
-                    <img
-                      src="/src/assets/HomeTwo/p3.png"
-                      className="w-full"
-                      alt="Footer"
-                    />
+                    <img src={footer3} className="w-full" alt="Footer" />
                   </Link>
                   <Link to="/" className="inline-block m-[5px]">
-                    <img
-                      src="/src/assets/HomeTwo/p4.png"
-                      className="w-full"
-                      alt="Footer"
-                    />
+                    <img src={footer4} className="w-full" alt="Footer" />
                   </Link>
                   <Link to="/" className="inline-block m-[5px]">
-                    <img
-                      src="/src/assets/HomeTwo/p5.png"
-                      className="w-full"
-                      alt="Footer"
-                    />
+                    <img src={footer5} className="w-full" alt="Footer" />
                   </Link>
                   <Link to="/" className="inline-block m-[5px]">
-                    <img
-                      src="/src/assets/HomeTwo/p6.png"
-                      className="w-full"
-                      alt="Footer"
-                    />
+                    <img src={footer6} className="w-full" alt="Footer" />
                   </Link>
                 </div>
               </div>
