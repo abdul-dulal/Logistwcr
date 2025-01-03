@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import {
   faAngleLeft,
   faAngleRight,
@@ -7,9 +6,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-const FeaturedSliderContent = ({
+const FeaturedSliderContentOne = ({
   activeIndex,
-  setActiveIndex,
   title,
   titleTwo,
   subTitle,
@@ -92,4 +90,4 @@ const FeaturedSliderContent = ({
   );
 };
 
-export default FeaturedSliderContent;
+export default FeaturedSliderContentOne;

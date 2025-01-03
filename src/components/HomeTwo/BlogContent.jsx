@@ -1,13 +1,15 @@
-/* eslint-disable react/prop-types */
 import { faArrowRightLong, faComment } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Link } from "react-router-dom";
-import meta from "/src/assets/HomeOne/meta.png";
+import meta from "/src/assets/HomeOne/author.png";
 
 const BlogContent = ({ blog, bTitle }) => {
   return (
-    <div className="relative before:absolute before:content-[''] before:right-11 before:top-9 before:w-[76px] before:h-[76px] before:bg-primary before:rotate-[45deg]">
+    <div
+      className="relative before:absolute before:content-[''] before:right-11 before:top-9 before:w-[76px] before:h-[76px] before:bg-primary before:rotate-[45deg] wow animate__fadeInUp"
+      data-wow-duration=".8s"
+    >
       <img src={blog} className="w-full" alt="Blog" />
       <div className="absolute top-10 right-14">
         <span className="inline-block text-lg font-normal text-white text-center">
@@ -28,7 +30,7 @@ const BlogContent = ({ blog, bTitle }) => {
             <span>{6} Comment</span>
           </div>
         </div>
-        <div className="block">
+        <div className="block wow animate__fadeInUp" data-wow-duration=".8s">
           <Link
             to="/"
             className="inline  xl:text-[26px] lg:text-[19px] text-[19px] xl:leading-[42px] leading-[30px] mb-2 text-secondary font-medium mt-[21px] bg-no-repeat bg-[linear-gradient(transparent_calc(100%-1px),currentColor_1px)] transition-all duration-[900ms] ease-[cubic-bezier(0.32,0.32,0.15,1.17)] bg-[size:0_100%] capitalize hover:bg-[size:100%_100%] hover:text-primary"

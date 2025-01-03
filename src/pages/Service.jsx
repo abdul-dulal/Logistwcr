@@ -1,18 +1,18 @@
 import BreadCumb from "../components/Others/BreadCumb";
 
-import Services from "../components/HomeOne/Services";
-import serviceOne from "/src/assets/HomeOne/service1.jpg";
-import serviceTwo from "/src/assets/HomeOne/service2.jpg";
-import serviceThree from "/src/assets/HomeOne/service3.jpg";
+import serviceOne from "/src/assets/HomeOne/1-s-1.jpg";
+import serviceTwo from "/src/assets/HomeOne/1-s-2.jpg";
+import serviceThree from "/src/assets/HomeOne/1-s-3.jpg";
 import serviceIconOne from "/src/assets/HomeOne/dallar-icon.png";
 import serviceIconTwo from "/src/assets/HomeOne/ship-icon.png";
 import serviceIconthree from "/src/assets/HomeOne/home-icon.png";
 import Appointment from "../components/HomeOne/Appointment";
 
 import Testimonial from "../components/HomeOne/Testimonial";
-import t1 from "/src/assets/HomeOne/t1.png";
-import t2 from "/src/assets/HomeOne/t2.png";
-import t3 from "/src/assets/HomeOne/t3.png";
+import t1 from "/src/assets/HomeOne/1-1.png";
+import t2 from "/src/assets/HomeOne/1-2.png";
+import t3 from "/src/assets/HomeOne/1-3.png";
+import ServiceOne from "../components/HomeOne/ServiceOne";
 const Service = () => {
   return (
     <div>
@@ -34,17 +34,17 @@ const Service = () => {
             className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 wow animate__fadeInUp"
             data-wow-duration=".9s"
           >
-            <Services
+            <ServiceOne
               img={serviceOne}
               icon={serviceIconOne}
               title="Transport by Road"
             />
-            <Services
+            <ServiceOne
               img={serviceTwo}
               icon={serviceIconTwo}
               title="Safety Garunteed"
             />
-            <Services
+            <ServiceOne
               img={serviceThree}
               icon={serviceIconthree}
               title="Managing logistics for"
@@ -73,7 +73,7 @@ const Service = () => {
           </div>
           <div
             className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 wow animate__fadeInUp"
-            data-wow-duration=".9s"
+            data-wow-duration=".8s"
           >
             <Testimonial img={t1} client="Sahinur Islam" />
             <Testimonial img={t2} client="Madriya Merin" />

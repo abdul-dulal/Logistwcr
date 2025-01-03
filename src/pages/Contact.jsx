@@ -65,28 +65,33 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="your name"
-                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize"
+                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize wow animate__fadeInUp"
+                      data-wow-duration=".8s"
                     />
                     <input
                       type="email"
                       placeholder="email address"
-                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize"
+                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize wow animate__fadeInUp"
+                      data-wow-duration=".8s"
                     />
                     <input
                       type="tel"
                       placeholder="phone number"
-                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize"
+                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize wow animate__fadeInUp"
+                      data-wow-duration=".8s"
                     />
                     <input
                       type="text"
                       placeholder="subject"
-                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize"
+                      className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 placeholder:capitalize wow animate__fadeInUp"
+                      data-wow-duration=".8s"
                     />
                   </div>
                   <input
                     type="text"
                     placeholder="write your question here"
-                    className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 mt-5 placeholder:capitalize"
+                    className="bg-[#f3f3f3] w-full h-[60px] rounded-[5px]  outline-none focus:outline-none px-8 mt-5 placeholder:capitalize wow animate__fadeInUp"
+                    data-wow-duration=".8s"
                   />
                   <textarea
                     name=""
@@ -94,12 +99,14 @@ const Contact = () => {
                     cols="30"
                     rows="7"
                     placeholder="write your question here"
-                    className="bg-[#f3f3f3] w-full  rounded-[5px]  outline-none focus:outline-none px-8 py-[15px] mt-5 placeholder:capitalize"
+                    className="bg-[#f3f3f3] w-full  rounded-[5px]  outline-none focus:outline-none px-8 py-[15px] mt-5 placeholder:capitalize wow animate__fadeInUp"
+                    data-wow-duration=".8s"
                   ></textarea>
                   <button
                     type="submit"
                     to="/"
-                    className={` mt-6 relative inline-block bg-primary text-xl capitalize text-white py-[18px] px-[42px] overflow-hidden transition-all duration-500 z-[1]  before:absolute before:content-[''] before:top-0 before:-left-3 before:w-[30px] before:h-full before:bg-secondary before:skew-x-[22deg] before:transition-all before:duration-500 before:-z-[1] before:hover:w-[95%] `}
+                    className={` mt-6 relative inline-block bg-primary text-xl capitalize text-white py-[18px] px-[42px] overflow-hidden transition-all duration-500 z-[1]  before:absolute before:content-[''] before:top-0 before:-left-3 before:w-[30px] before:h-full before:bg-secondary before:skew-x-[22deg] before:transition-all before:duration-500 before:-z-[1] before:hover:w-[95%] wow animate__fadeInUp `}
+                    data-wow-duration=".8s"
                   >
                     request quote
                     <FontAwesomeIcon

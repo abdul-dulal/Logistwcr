@@ -40,7 +40,7 @@ const HeaderTwo = () => {
                     <ul className=" relative ">
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="javascript:void(0)"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           Home <FontAwesomeIcon icon={faAngleDown} />
@@ -69,12 +69,20 @@ const HeaderTwo = () => {
                                 home three
                               </Link>
                             </li>
+                            <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
+                              <Link
+                                className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
+                                to="/HomeFour"
+                              >
+                                home three
+                              </Link>
+                            </li>
                           </ul>
                         </Link>
                       </li>
                       <li className=" text-secondary text-lg font-medium pb-10 mr-9 inline  ">
                         <Link
-                          to="/"
+                          to="/About"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           About
@@ -82,7 +90,7 @@ const HeaderTwo = () => {
                       </li>
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="javascript:void(0)"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           Services <FontAwesomeIcon icon={faAngleDown} />
@@ -90,7 +98,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Service"
                               >
                                 Service
                               </Link>
@@ -98,7 +106,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/service-details"
                               >
                                 Service details
                               </Link>
@@ -108,7 +116,7 @@ const HeaderTwo = () => {
                       </li>
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="javascript:void(0)"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           Pages <FontAwesomeIcon icon={faAngleDown} />
@@ -116,7 +124,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Team"
                               >
                                 team
                               </Link>
@@ -124,7 +132,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/team-details"
                               >
                                 team details
                               </Link>
@@ -132,7 +140,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Project"
                               >
                                 project
                               </Link>
@@ -140,7 +148,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/project-details"
                               >
                                 project details
                               </Link>
@@ -148,7 +156,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-14 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Faq"
                               >
                                 FAQ
                               </Link>
@@ -156,7 +164,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/*"
                               >
                                 404 page
                               </Link>
@@ -166,7 +174,7 @@ const HeaderTwo = () => {
                       </li>
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="javascript:void(0)"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           News <FontAwesomeIcon icon={faAngleDown} />
@@ -174,7 +182,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/BlogStandard"
                               >
                                 blog standard
                               </Link>
@@ -182,7 +190,7 @@ const HeaderTwo = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/blog-details"
                               >
                                 blog details
                               </Link>
@@ -192,7 +200,7 @@ const HeaderTwo = () => {
                       </li>
                       <li className=" text-secondary text-lg font-medium pb-10  inline  ">
                         <Link
-                          to="/"
+                          to="/Contact"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           Contact

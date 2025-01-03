@@ -5,7 +5,7 @@ const BreadCumb = ({ title, currentPage }) => {
   return (
     <div className="bg-[url('/src/assets/About/breadcumb-bg.jpg')] pt-[155px] pb-6">
       <div className="container">
-        <div>
+        <div className="wow animate__fadeInUp" data-wow-duration=".8s">
           <span className="lg:text-[28px] text-lg text-white text-center block">
             Business Models you can Consider
           </span>

@@ -223,6 +223,7 @@ li:hover .sub-menu {
   }
 }
 
+/* customize done */
 .shape {
   animation: moveUpDown 10s infinite linear;
 }
@@ -242,19 +243,4 @@ li:hover .sub-menu {
 
 .book_info::before {
   animation: upDown 10s infinite linear;
-}
-.shape {
-  animation: upDown 10s infinite linear;
-}
-
-@keyframes upDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }

@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
-
-const STsliderContent = ({ icon, title }) => {
+const STsliderContentOne = ({ icon, title }) => {
   return (
     <div className="container">
       <div className="bg-white px-[33px] pt-[42px] pb-[33px]">
@@ -21,4 +19,4 @@ const STsliderContent = ({ icon, title }) => {
   );
 };
 
-export default STsliderContent;
+export default STsliderContentOne;

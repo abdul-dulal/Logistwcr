@@ -4,12 +4,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
-import STsliderContent from "./STsliderContent";
-import icon1 from "/src/assets/HomeOne/icon1.png";
-import icon2 from "/src/assets/HomeOne/icon2.png";
-import icon3 from "/src/assets/HomeOne/icon3.png";
-import icon4 from "/src/assets/HomeOne/icon4.png";
+
+import icon1 from "/src/assets/HomeOne/slider-icon1.png";
+import icon2 from "/src/assets/HomeOne/slider-icon2.png";
+import icon3 from "/src/assets/HomeOne/slider-icon3.png";
+import icon4 from "/src/assets/HomeOne/slider-icon4.png";
 import { Link } from "react-router-dom";
+import STsliderContentOne from "./STsliderContentOne";
 
 const STslider = () => {
   return (
@@ -44,16 +45,16 @@ const STslider = () => {
           }}
         >
           <SwiperSlide>
-            <STsliderContent icon={icon1} title=" Transparent Pricing" />
+            <STsliderContentOne icon={icon1} title=" Transparent Pricing" />
           </SwiperSlide>
           <SwiperSlide>
-            <STsliderContent icon={icon2} title="Packaging Distri" />
+            <STsliderContentOne icon={icon2} title="Packaging Distri" />
           </SwiperSlide>
           <SwiperSlide>
-            <STsliderContent icon={icon3} title="Real Time Tracking" />
+            <STsliderContentOne icon={icon3} title="Real Time Tracking" />
           </SwiperSlide>
           <SwiperSlide>
-            <STsliderContent icon={icon4} title="Warehoues Storage" />
+            <STsliderContentOne icon={icon4} title="Warehoues Storage" />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -15,7 +15,7 @@ const Testimonial = ({ img, client }) => {
           </p>
         </div>
       </div>
-      <p className="relative  text-base leading-[26px] z-[99] transition-all duration-500 ease-out group-hover:text-white group-hover:transition-all group-hover:duration-500 group-hover:ease-out">
+      <p className="relative  text-base leading-[26px] z-[9] transition-all duration-500 ease-out group-hover:text-white group-hover:transition-all group-hover:duration-500 group-hover:ease-out">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
         suspendisse

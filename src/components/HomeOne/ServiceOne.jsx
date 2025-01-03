@@ -1,9 +1,8 @@
-/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Services = ({ img, icon, title }) => {
+const ServiceOne = ({ img, icon, title }) => {
   return (
     <div className="group relative">
       <div className="relative z-[1] transition-all duration-500 overflow-hidden before:absolute before:content-[''] before:bottom-0 before:left-0 before:w-[0%] before:h-[10px] before:bg-primary before:z-[1] before:transition-all before:duration-1000 before:hover:w-full ">
@@ -39,4 +38,4 @@ const Services = ({ img, icon, title }) => {
   );
 };
 
-export default Services;
+export default ServiceOne;

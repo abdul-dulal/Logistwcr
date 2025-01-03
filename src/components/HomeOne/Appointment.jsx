@@ -10,7 +10,7 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import InputField from "./InputField";
-import bg from "/src/assets/HomeOne/bg.jpg";
+import bg from "/src/assets/HomeOne/appionment.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Appointment = () => {

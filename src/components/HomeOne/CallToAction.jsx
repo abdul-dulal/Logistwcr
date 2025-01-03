@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -6,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const CallToAction = ({ bgImg }) => {
   return (
-    <section
+    <div
       style={{
         backgroundImage: `url(${bgImg})`,
         backgroundRepeat: "no-repeat",
@@ -48,7 +47,7 @@ const CallToAction = ({ bgImg }) => {
           </Link>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

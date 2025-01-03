@@ -17,6 +17,7 @@ import Faq from "../pages/Faq";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import BlogStandarad from "../pages/BlogStandarad";
+import BlogDetails from "../pages/BlogDetails";
 
 const routes = createBrowserRouter([
   {
@@ -76,11 +77,15 @@ const routes = createBrowserRouter([
         element: <BlogStandarad />,
       },
       {
+        path: "/blog-details",
+        element: <BlogDetails />,
+      },
+      {
         path: "/Contact",
         element: <Contact />,
       },
       {
-        path: "*",
+        path: "/*",
         element: <NotFound />,
       },
     ],

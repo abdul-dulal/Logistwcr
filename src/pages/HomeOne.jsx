@@ -1,11 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import WOW from "wow.js";
 import "animate.css";
+
+import { Navigation, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FeaturedSlider from "../components/HomeOne/FeaturedSlider";
-import STslider from "../components/HomeOne/STslider";
-import about from "/src/assets/HomeOne/about.jpg";
-import icon from "/src/assets/HomeOne/icon5.png";
+import about from "/src/assets/HomeOne/about-01.jpg";
+import icon from "/src/assets/HomeOne/tracking.png";
 import {
   faAnglesRight,
   faArrowRight,
@@ -13,38 +19,52 @@ import {
   faComment,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-import serviceOne from "/src/assets/HomeOne/service1.jpg";
-import serviceTwo from "/src/assets/HomeOne/service2.jpg";
-import serviceThree from "/src/assets/HomeOne/service3.jpg";
+
+import serviceImg1 from "/src/assets/HomeOne/1-s-1.jpg";
+import serviceImg2 from "/src/assets/HomeOne/1-s-2.jpg";
+import serviceImg3 from "/src/assets/HomeOne/1-s-3.jpg";
 import serviceIconOne from "/src/assets/HomeOne/dallar-icon.png";
 import serviceIconTwo from "/src/assets/HomeOne/ship-icon.png";
 import serviceIconthree from "/src/assets/HomeOne/home-icon.png";
-import Services from "../components/HomeOne/Services";
-import t1 from "/src/assets/HomeOne/t1.png";
-import t2 from "/src/assets/HomeOne/t2.png";
-import t3 from "/src/assets/HomeOne/t3.png";
-import project1 from "/src/assets/HomeOne/p1.jpg";
-import project2 from "/src/assets/HomeOne/p2.jpg";
-import project3 from "/src/assets/HomeOne/p3.jpg";
-import project4 from "/src/assets/HomeOne/p4.jpg";
-import call2 from "/src/assets/HomeOne/call2.jpg";
+import t1 from "/src/assets/HomeOne/1-1.png";
+import t2 from "/src/assets/HomeOne/1-2.png";
+import t3 from "/src/assets/HomeOne/1-3.png";
+import project1 from "/src/assets/HomeOne/project1.jpg";
+import project2 from "/src/assets/HomeOne/project2.jpg";
+import project3 from "/src/assets/HomeOne/project3.jpg";
+import project4 from "/src/assets/HomeOne/project4.jpg";
+import call2 from "/src/assets/HomeOne/subscribe.jpg";
 import Testimonial from "../components/HomeOne/Testimonial";
-import shape from "/src/assets/HomeOne/shape.png";
-import Appointment from "../components/HomeOne/Appointment";
+import shape from "/src/assets/HomeOne/air-plane.png";
+
 import Projects from "../components/HomeOne/Projects";
 import Pricing from "../components/HomeOne/Pricing";
-import blog1 from "/src/assets/HomeOne/b1.jpg";
-import blog2 from "/src/assets/HomeOne/b2.jpg";
-import blog3 from "/src/assets/HomeOne/b3.jpg";
-import meta from "/src/assets/HomeOne/meta.png";
+import blog1 from "/src/assets/HomeOne/blog1.jpg";
+import blog2 from "/src/assets/HomeOne/blog2.jpg";
+import blog3 from "/src/assets/HomeOne/blog3.jpg";
+import meta from "/src/assets/HomeOne/author.png";
 import Brand from "../components/HomeOne/Brand";
 
 import FooterSocial from "../components/Footer/FooterSocial";
 import CallToAction from "../components/HomeOne/CallToAction";
-import call from "/src/assets/HomeOne/call-to-action.jpg";
+import call from "/src/assets/HomeOne/subscribe-bg.jpg";
 import StSubscribe from "../components/HomeOne/StSubscribe";
+import slider1 from "/src/assets/slider/home1.jpg";
+import slider2 from "/src/assets/slider/home2.jpg";
+import FeaturedSliderContentOne from "../components/HomeOne/FeaturedSliderContentOne";
+
+import icon1 from "/src/assets/HomeOne/slider-icon1.png";
+import icon2 from "/src/assets/HomeOne/slider-icon2.png";
+import icon3 from "/src/assets/HomeOne/slider-icon3.png";
+import icon4 from "/src/assets/HomeOne/slider-icon4.png";
+import STsliderContentOne from "../components/HomeOne/STsliderContentOne";
+import ServiceOne from "../components/HomeOne/ServiceOne";
+import AppoinmentLeft from "../components/HomeOne/AppoinmentLeft";
+
+import VideoModal from "../components/HomeTwo/VideoModal";
 const HomeOne = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const swiperRef = useRef(null);
   useEffect(() => {
     const wow = new WOW({
       boxClass: "wow",
@@ -57,15 +77,132 @@ const HomeOne = () => {
   }, []);
   return (
     <div>
-      {/* ST__Featured__Slider */}
-      <FeaturedSlider />
+      {/* Featured__Slider */}
+      <div className=" group">
+        <Swiper
+          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+          slidesPerView={1}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          modules={[Navigation, Autoplay]}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+        >
+          <SwiperSlide>
+            <FeaturedSliderContentOne
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              title="Experience The Best "
+              titleTwo=" Logistic & Transport"
+              subTitle="We Specialise in the transportation"
+              index={0}
+              bgImg={slider1}
+              swiperRef={swiperRef}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <FeaturedSliderContentOne
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              title="Experience The Best "
+              titleTwo=" Logistic & Transport"
+              subTitle="We Specialise in the transportation"
+              index={1}
+              bgImg={slider2}
+              swiperRef={swiperRef}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <FeaturedSliderContentOne
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              title="Experience The Best "
+              titleTwo=" Logistic & Transport"
+              subTitle="We Specialise in the transportation"
+              index={2}
+              bgImg={slider1}
+              swiperRef={swiperRef}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <FeaturedSliderContentOne
+              activeIndex={activeIndex}
+              setActiveIndex={setActiveIndex}
+              title="Experience The Best "
+              titleTwo=" Logistic & Transport"
+              subTitle="We Specialise in the transportation"
+              index={3}
+              bgImg={slider2}
+              swiperRef={swiperRef}
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
 
-      {/* ST__Slider */}
-      <section className="relative">
-        <STslider />
-      </section>
+      {/* Slider */}
+      <div className="relative">
+        <div className="relative bg-secondary pb-[60px]">
+          <div className="wow animate__fadeInUp" data-wow-duration=".3s">
+            <Swiper
+              spaceBetween={2}
+              speed={1000}
+              loop={true}
+              className="relative"
+              breakpoints={{
+                620: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: -10,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: -10,
+                },
+                1200: {
+                  slidesPerView: 3,
+                  spaceBetween: -10,
+                },
+                1536: {
+                  slidesPerView: 4,
+                  spaceBetween: -10,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <STsliderContentOne icon={icon1} title=" Transparent Pricing" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <STsliderContentOne icon={icon2} title="Packaging Distri" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <STsliderContentOne icon={icon3} title="Real Time Tracking" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <STsliderContentOne icon={icon4} title="Warehoues Storage" />
+              </SwiperSlide>
+            </Swiper>
+          </div>
 
-      {/* ST__About__Area */}
+          <div className="wow animate__fadeInUp" data-wow-duration=".5s">
+            <p className="text-white text-center text-lg font-normal mt-14">
+              Our list of services does not end here. Find out how we can help
+              you and your business.
+              <Link
+                className="relative inline-block capitalize text-primary ml-3 before:absolute before:content-[''] before:bottom-0 before:right-0 before:bg-primary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
+                to="/"
+              >
+                more services
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* About__Area */}
 
       <section className="relative py-[100px] ">
         <div
@@ -133,7 +270,7 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* ST__Service__Area */}
+      {/* Service__Area */}
       <section className="bg-[#f5f4f9] pt-[100px] pb-20">
         <div className="container">
           <div
@@ -150,18 +287,18 @@ const HomeOne = () => {
             className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 wow animate__fadeInUp"
             data-wow-duration=".9s"
           >
-            <Services
-              img={serviceOne}
+            <ServiceOne
+              img={serviceImg1}
               icon={serviceIconOne}
               title="Transport by Road"
             />
-            <Services
-              img={serviceTwo}
+            <ServiceOne
+              img={serviceImg2}
               icon={serviceIconTwo}
               title="Safety Garunteed"
             />
-            <Services
-              img={serviceThree}
+            <ServiceOne
+              img={serviceImg3}
               icon={serviceIconthree}
               title="Managing logistics for"
             />
@@ -169,7 +306,7 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* ST__Client__Area */}
+      {/* Client__Area */}
       <section className="pt-[100px] pb-20">
         <div className="container">
           <div
@@ -193,13 +330,35 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* ST__Appionment__Area */}
+      {/* Appionment__Area */}
 
-      <section className="relative bg-primary pt-[100px] overflow-hidden z-[1]">
-        <Appointment />
-      </section>
+      <div className="relative bg-primary xl:pt-[100px] pt-10 overflow-hidden z-[1]">
+        <div className="container">
+          <div className="grid grid-cols-12">
+            <div className="lg:col-span-9 col-span-12">
+              <AppoinmentLeft />
+            </div>
+            <div className="col-span-3"></div>
+            <div className="">
+              <div className="absolute top-[33px]  -z-[1] right-0 w-[50%] h-full overflow-hidden">
+                <img
+                  src="/src/assets/HomeOne/appionment.jpg"
+                  className="bg-cover bg-no-repeat  h-full"
+                  alt="Appionment"
+                />
+              </div>
+              <div className="absolute right-[4%] bottom-[18%] xl:block hidden">
+                <img src={shape} className="w-[71%] shape" alt="" />
+              </div>
+              <div className="absolute top-[22%] right-[11%] lg:block hidden">
+                <VideoModal />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      {/* ST__Project__Area */}
+      {/* Project__Area */}
       <section className="py-[100px]">
         <div className="container">
           <div
@@ -236,7 +395,7 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* ST__Price__Area */}
+      {/* Price__Area */}
       <section className="pb-[100px]">
         <div className="container">
           <div
@@ -251,7 +410,7 @@ const HomeOne = () => {
           </div>
           <div
             className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 wow animate__fadeInUp"
-            data-wow-duration=".6s"
+            data-wow-duration=".8s"
           >
             <Pricing title="basic plan" price={65} />
             <Pricing title="standard plan" price={79} />
@@ -260,14 +419,14 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/*ST__Call_To_Action  */}
+      {/* Call_To_Action  */}
 
       <CallToAction bgImg={call} />
 
-      {/* ST__Subscribe__Area */}
+      {/* Subscribe__Area */}
       <StSubscribe img={call2} />
 
-      {/* ST__Blog__Area */}
+      {/* Blog__Area */}
       <section className="relative pb-[100px]">
         <div className="container">
           <div
@@ -421,7 +580,7 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* ST__Brand_Area */}
+      {/* Brand_Area */}
 
       <section className="pb-[120px] border-t border-solid border-[#ebebeb]">
         <div className="container">
@@ -437,7 +596,7 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* ST__Footer__Area */}
+      {/* Footer__Area */}
       <footer className="pt-[120px] pb-8 overflow-hidden bg-[url('/src/assets/HomeOne/footer-bg.jpg')] bg-no-repeat bg-cover bg-center">
         <div className="container">
           <div className="border-b border-dashed border-primary pb-[121px]">

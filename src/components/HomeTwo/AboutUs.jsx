@@ -19,24 +19,41 @@ const AboutUs = () => {
   return (
     <section className="pt-[100px] pb-[100px]">
       <div className="container">
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-10 ">
           <div>
-            <img src={about} alt="About" />
+            <img
+              src={about}
+              className="wow animate__fadeInUp"
+              data-wow-duration=".8s"
+              alt="About"
+            />
           </div>
           <div className="mt-[18px]">
-            <h5 className="capitalize relative   left-10 inline-block after:absolute after:-left-9 after:top-1.5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:-left-8 before:top-1.5 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle">
+            <h5
+              className="capitalize relative   left-10 inline-block after:absolute after:-left-9 after:top-1.5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:-left-8 before:top-1.5 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle wow animate__fadeInUp"
+              data-wow-duration=".8s"
+            >
               about the company
             </h5>
-            <h2 className="mt-[22px]">
+            <h2
+              className="mt-[22px] wow animate__fadeInUp"
+              data-wow-duration=".8s"
+            >
               Global logistics Solution Provider 1999
             </h2>
-            <p className="my-[23px]">
+            <p
+              className="my-[23px] wow animate__fadeInUp"
+              data-wow-duration=".8s"
+            >
               Payment solutions enable businesses to accept payments Payment
               stions enable businesses to accept payments from ctly customers
               ctly securely. stions enable businesses to accept payments from
               ctly customers ctly securely.
             </p>
-            <div className="grid sm:grid-cols-2 pt-3 pb-7 border-b border-solid border-[#f2f2f2]">
+            <div
+              className="grid sm:grid-cols-2 pt-3 pb-7 border-b border-solid border-[#f2f2f2] wow animate__fadeInUp"
+              data-wow-duration=".8s"
+            >
               <div className="">
                 <ul className="">
                   <li className="relative pl-7 pb-[13px] md:text-xl text-[15px] text-secondary font-medium capitalize  before:absolute before:content-[''] before:top-[9px] before:left-[2px] before:w-[9px] before:h-[9px] before:bg-primary after:absolute after:content-[''] after:-left-[1px] after:top-[6px] after:h-[15px] after:w-[15px] after:border after:border-solid after:border-primary">

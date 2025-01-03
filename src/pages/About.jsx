@@ -102,7 +102,10 @@ const About = () => {
             <span className="relative inline-block after:absolute after:left-5 after:-top-5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:left-5 before:-top-4 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle"></span>
             <h2 className="mb-11">Meet The Excecutive Panel</h2>
           </div>
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+          <div
+            className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 wow animate__fadeInUp"
+            data-wow-duration=".8s"
+          >
             <Team img={tm1} name="Somaiya Akter" />
             <Team img={tm2} name="Abdul Dulal" />
             <Team img={tm3} name="Monio Roman" />

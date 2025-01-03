@@ -22,7 +22,9 @@ const Navbar = () => {
   return (
     <header
       className={`    ${
-        isSticky ? "fixed top-0 left-0 w-full z-[9] bg-[#d1e4ea] is-sticky" : ""
+        isSticky
+          ? "fixed top-0 left-0 w-full z-[999] bg-[#d1e4ea] is-sticky"
+          : ""
       }`}
     >
       <div className="relative bg-[#d1e4ea] py-[25px]">
@@ -40,7 +42,7 @@ const Navbar = () => {
                     <ul className=" relative ">
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="javascript:void(0)"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           Home <FontAwesomeIcon icon={faAngleDown} />
@@ -69,12 +71,20 @@ const Navbar = () => {
                                 home three
                               </Link>
                             </li>
+                            <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
+                              <Link
+                                className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
+                                to="/HomeFour"
+                              >
+                                home freight
+                              </Link>
+                            </li>
                           </ul>
                         </Link>
                       </li>
                       <li className=" text-secondary text-lg font-medium pb-10 mr-9 inline  ">
                         <Link
-                          to="/"
+                          to="/About"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           About
@@ -82,7 +92,7 @@ const Navbar = () => {
                       </li>
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="javascript:void(0)"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           Services <FontAwesomeIcon icon={faAngleDown} />
@@ -90,7 +100,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Service"
                               >
                                 Service
                               </Link>
@@ -98,7 +108,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/service-details"
                               >
                                 Service details
                               </Link>
@@ -108,7 +118,7 @@ const Navbar = () => {
                       </li>
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="javascript:void(0)"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           Pages <FontAwesomeIcon icon={faAngleDown} />
@@ -116,7 +126,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Team"
                               >
                                 team
                               </Link>
@@ -124,7 +134,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/team-details"
                               >
                                 team details
                               </Link>
@@ -132,7 +142,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Project"
                               >
                                 project
                               </Link>
@@ -140,7 +150,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/project-details"
                               >
                                 project details
                               </Link>
@@ -148,7 +158,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-14 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/Faq"
                               >
                                 FAQ
                               </Link>
@@ -156,7 +166,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/*"
                               >
                                 404 page
                               </Link>
@@ -166,7 +176,7 @@ const Navbar = () => {
                       </li>
                       <li className=" text-secondary text-lg font-medium mr-9  pb-10 inline  ">
                         <Link
-                          to="/"
+                          to="/BlogStandard"
                           className="relative before:absolute before:content-[''] before:-bottom-1 before:right-0 before:bg-secondary before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0"
                         >
                           News <FontAwesomeIcon icon={faAngleDown} />
@@ -182,7 +192,7 @@ const Navbar = () => {
                             <li className="relative  inline-block mr-10 transition-all duration-500 ease-out before:absolute before:content-[''] before:bottom-1 before:right-0 before:bg-[#f68b21] before:w-0 before:h-[1px] before:transition-all before:ease-out before:duration-500 before:hover:w-[100%] before:hover:left-0">
                               <Link
                                 className="py-[9px]  m-0 text-white leading-[26px] capitalize font-normal text-lg  block relative transition-all duration-500 ease-out hover:text-[#f68b21] "
-                                to="/"
+                                to="/blog-details"
                               >
                                 blog details
                               </Link>

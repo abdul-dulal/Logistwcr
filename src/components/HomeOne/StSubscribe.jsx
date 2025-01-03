@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const StSubscribe = ({ img }) => {
   return (
     <section className="relative  pb-[100px]">

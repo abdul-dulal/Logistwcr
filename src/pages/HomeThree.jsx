@@ -388,7 +388,10 @@ const HomeThree = () => {
             <h6>Our Most Team</h6>
             <h3 className="mb-11">Meet The Excecutive Panel</h3>
           </div>
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+          <div
+            className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 wow animate__fadeInUp"
+            data-wow-duration=".8s"
+          >
             <Team img={tm1} name="Somaiya Akter" />
             <Team img={tm2} name="Abdul Dulal" />
             <Team img={tm3} name="Monio Roman" />

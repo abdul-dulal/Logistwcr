@@ -16,9 +16,9 @@ import service2 from "/src/assets/HomeFour/service2.jpg";
 import service3 from "/src/assets/HomeFour/service3.jpg";
 import Testimonial from "../components/HomeOne/Testimonial";
 
-import t1 from "/src/assets/HomeOne/t1.png";
-import t2 from "/src/assets/HomeOne/t2.png";
-import t3 from "/src/assets/HomeOne/t3.png";
+import t1 from "/src/assets/HomeOne/1-1.png";
+import t2 from "/src/assets/HomeOne/1-2.png";
+import t3 from "/src/assets/HomeOne/1-3.png";
 import Appointment from "../components/HomeOne/Appointment";
 import Projects from "../components/HomeOne/Projects";
 
@@ -34,7 +34,7 @@ import call2 from "/src/assets/HomeFour/callac.jpg";
 import p1 from "/src/assets/HomeFour/h4p1.jpg";
 import p2 from "/src/assets/HomeFour/h4p2.jpg";
 import p3 from "/src/assets/HomeFour/h4p3.jpg";
-import meta2 from "/src/assets/HomeOne/meta.png";
+import author from "/src/assets/HomeOne/author.png";
 import Brand from "../components/HomeOne/Brand";
 const HomeFour = () => {
   return (
@@ -211,7 +211,7 @@ const HomeFour = () => {
           </div>
           <div
             className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 wow animate__fadeInUp"
-            data-wow-duration=".6s"
+            data-wow-duration=".8s"
           >
             <Pricing title="basic plan" price={65} />
             <Pricing title="standard plan" price={79} />
@@ -252,7 +252,11 @@ const HomeFour = () => {
                 <div className="relative mb-5 before:absolute before:content-[''] before:bg-[#ebebeb] before:h-9 before:w-[1px] before:top-2 before:left-[141px]">
                   <div className="flex flex-wrap justify-between">
                     <div className="flex items-center gap-[15px] ">
-                      <img src={meta2} className="rounded-[50%]" alt="Author" />
+                      <img
+                        src={author}
+                        className="rounded-[50%]"
+                        alt="Author"
+                      />
                       <span className="font-medium text-[#292930] capitalize">
                         by admin
                       </span>
@@ -297,7 +301,11 @@ const HomeFour = () => {
                 <div className="relative mb-5 before:absolute before:content-[''] before:bg-[#ebebeb] before:h-9 before:w-[1px] before:top-2 before:left-[141px]">
                   <div className="flex flex-wrap justify-between">
                     <div className="flex items-center gap-[15px] ">
-                      <img src={meta2} className="rounded-[50%]" alt="Author" />
+                      <img
+                        src={author}
+                        className="rounded-[50%]"
+                        alt="Author"
+                      />
                       <span className="font-medium text-[#292930] capitalize">
                         by admin
                       </span>
@@ -343,7 +351,11 @@ const HomeFour = () => {
                 <div className="relative mb-5 before:absolute before:content-[''] before:bg-[#ebebeb] before:h-9 before:w-[1px] before:top-2 before:left-[141px]">
                   <div className="flex flex-wrap justify-between">
                     <div className="flex items-center gap-[15px] ">
-                      <img src={meta2} className="rounded-[50%]" alt="Author" />
+                      <img
+                        src={author}
+                        className="rounded-[50%]"
+                        alt="Author"
+                      />
                       <span className="font-medium text-[#292930] capitalize">
                         by admin
                       </span>

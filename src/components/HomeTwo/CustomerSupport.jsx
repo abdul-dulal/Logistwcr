@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { faArrowRight, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import shape from "/src/assets/HomeTwo/shape2.png";
+import VideoModal from "./VideoModal";
 const CustomerSupport = () => {
   return (
     <section className="relative py-[140px] bg-[url('/src/assets/HomeTwo/bg.jpg')] bg-no-repeat bg-cover bg-center ">
@@ -52,9 +53,7 @@ const CustomerSupport = () => {
             </div>
           </div>
           <div className="col-span-3 lg:block hidden relative top-16">
-            <button className="inline-block h-[100px] w-[100px] leading-[103px] bg-primary rounded-[50%] text-center duration-500 relative before:absolute before:content-[''] before:left-[50%] before:top-[50%] before:block before:w-full before:h-full before:rounded-[50%] before:z-[1] ap_video">
-              <FontAwesomeIcon icon={faPlay} className="text-white text-2xl" />
-            </button>
+            <VideoModal />
           </div>
         </div>
       </div>

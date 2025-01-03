@@ -19,9 +19,9 @@ import faq from "/src/assets/HomeTwo/faq.jpg";
 import Accrodian from "../components/HomeTwo/Accrodian";
 import AppionmentTwo from "../components/HomeTwo/AppionmentTwo";
 import Testimonial from "../components/HomeOne/Testimonial";
-import t1 from "/src/assets/HomeOne/t1.png";
-import t2 from "/src/assets/HomeOne/t2.png";
-import t3 from "/src/assets/HomeOne/t3.png";
+import t1 from "/src/assets/HomeOne/1-1.png";
+import t2 from "/src/assets/HomeOne/1-2.png";
+import t3 from "/src/assets/HomeOne/1-3.png";
 
 import blog1 from "/src/assets/HomeTwo/b1.jpg";
 import blog2 from "/src/assets/HomeTwo/b2.jpg";
@@ -91,7 +91,10 @@ const HomeTwo = () => {
             <span className="relative inline-block after:absolute after:left-5 after:-top-5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:left-5 before:-top-4 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle"></span>
             <h2 className="mb-11">Meet The Excecutive Panel</h2>
           </div>
-          <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+          <div
+            className="grid lg:grid-cols-4 sm:grid-cols-2 gap-6 wow animate__fadeInUp"
+            data-wow-duration=".8s"
+          >
             <Team img={tm1} name="Somaiya Akter" />
             <Team img={tm2} name="Abdul Dulal" />
             <Team img={tm3} name="Monio Roman" />
@@ -107,7 +110,7 @@ const HomeTwo = () => {
       <section className="pt-[100px]">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-8">
-            <div>
+            <div className="wow animate__fadeInUp" data-wow-duration=".8s">
               <h5 className="relative ml-9 text-secondary capitalize  mb-5 inline-block after:absolute after:-left-9 after:top-1.5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:-left-8 before:top-1.5 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle">
                 Frequently Asked Questions
               </h5>
@@ -129,10 +132,16 @@ const HomeTwo = () => {
           <div className="grid grid-cols-12">
             <div className="lg:col-span-8 col-span-12">
               <div className=" xl:px-[132px] sm:px-10 px-0 pb-[47px] ">
-                <h5 className="relative ml-9 text-secondary capitalize  mb-5 inline-block after:absolute after:-left-9 after:top-1.5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:-left-8 before:top-1.5 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle">
+                <h5
+                  className="relative ml-9 text-secondary capitalize  mb-5 inline-block after:absolute after:-left-9 after:top-1.5 after:w-4 after:h-4 after:bg-primary after:rotate-[45deg] after:transition-all after:duration-700 after:ease-out before:absolute before:content-[''] before:-left-8 before:top-1.5 before:w-4 before:h-4 before:bg-secondary before:rotate-[45deg] before:transition-all before:duration-700 before:ease-out before:z-[1] circle wow animate__fadeInUp"
+                  data-wow-duration=".8s"
+                >
                   Booking Appointment
                 </h5>
-                <h2 className="mb-5 text-secondary text-left">
+                <h2
+                  className="mb-5 text-secondary text-left wow animate__fadeInUp"
+                  data-wow-duration=".8s"
+                >
                   Book Transport & Logistics
                 </h2>
                 <AppionmentTwo />
@@ -202,7 +211,10 @@ const HomeTwo = () => {
           <h2 className="mb-11">The latest News & Best Blog</h2>
         </div>
         <div className="container">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+          <div
+            className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 wow animate__fadeInUp"
+            data-wow-duration=".8s"
+          >
             <BlogContent
               blog={blog1}
               bTitle="New Additions to our great Metro trucks."

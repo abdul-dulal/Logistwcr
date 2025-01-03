@@ -1,9 +1,9 @@
 import Projects from "../components/HomeOne/Projects";
 import BreadCumb from "../components/Others/BreadCumb";
-import project1 from "/src/assets/HomeOne/p1.jpg";
-import project2 from "/src/assets/HomeOne/p2.jpg";
-import project3 from "/src/assets/HomeOne/p3.jpg";
-import project4 from "/src/assets/HomeOne/p4.jpg";
+import project1 from "/src/assets/HomeOne/project1.jpg";
+import project2 from "/src/assets/HomeOne/project2.jpg";
+import project3 from "/src/assets/HomeOne/project3.jpg";
+import project4 from "/src/assets/HomeOne/project4.jpg";
 const Project = () => {
   return (
     <div>
